@@ -19,7 +19,8 @@ class App < Sinatra::Base
     "Goodbye #{@user_name}!"
   end
 
-  post "/multiply/:num1/:num2" do
+  post "/multiply" do
+    erb :multiply
     @num_1 = params[:num1]
     @num_2 = params[:num2]
     "#{num_1*num_2}"
