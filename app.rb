@@ -19,7 +19,7 @@ class App < Sinatra::Base
     "Goodbye #{@user_name}!"
   end
 
-  post "/multiply/num_1/num_2" do
+  get "/multiply/num_1/num_2" do
     @num_1 = params[:num1]
     @num_2 = params[:num2]
     erb :multiply
