@@ -1,9 +1,4 @@
 <h1>Multiply!</h1>
 <form action="/multiply" method="POST">
-  <p><input type="text" name="num_1" id="num_1" />
-    <input type="text" name="num_2" id="num_2" />
-  </p>
-
-  <input type="submit" value="Submit"/>
   <p><%= params[:num_1] * params[:num_2]%></p>
 </form>
